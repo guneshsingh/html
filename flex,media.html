@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            padding: 2px;
+            margin: 10px;
+        }
+        #boxl{
+            background-color: blue;
+            border: 2px solid black;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxr{
+            background-color: brown;
+            border: 2px solid black;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+        p{
+            border: 2px solid black;
+        }
+        image{
+            width: 170px;
+        }
+        @media (max-width:640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="boxl">
+<p>kkkllkl</p>
+<p>gdfvhv</p>
+    </div>
+    <div id="boxr">
+<img src="table.webp" alt="table">
+    </div>
+    </div>
+</body>
+</html>
