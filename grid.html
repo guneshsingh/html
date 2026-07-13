@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        padding: 4rem;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        grid-template-columns: repeat(3,1fr );
+        grid-template-rows: repeat(4,1fr);
+        
+        }
+        .item{
+            
+            border: 3px black solid;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: beige;
+        }
+        #h1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        #h2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #h3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #h4{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="h1">item1</div>
+        <div class="item" id="h2">item2</div>
+        <div class="item" id="h3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item" id="h4">item6</div>
+    </div>
+</body>
+</html>
